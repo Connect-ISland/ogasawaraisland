@@ -1,0 +1,350 @@
+/*mainブロック設定
+---------------------------------------------------------------------------*/
+/*mainブロックの設定*/
+main {
+	margin: 2rem 0;	/*ブロックの外側（上下、左右）に空けるスペース*/
+}
+
+/*main-contents-partsの設定*/
+.main-contents-parts {
+	margin-bottom: 30px;		/*ボックスの下に空けるスペース。sub-contents-partsとの間の余白です。*/
+}
+
+	/*画面幅900px以上の追加指定*/
+	@media screen and (min-width:900px) {
+
+	/*カラムで使う為の指定*/
+	main.column-parts {
+		display: flex;	/*flexボックスを使う指定*/
+		justify-content: space-between;	/*並びかたの種類の指定*/
+		gap: 2rem;						/*main-contents-partsとsub-contents-partsの間のマージン的な隙間*/
+	}
+	
+	/*main-contents-partsの設定*/
+	.main-contents-parts {
+		margin-bottom: 0;
+		order: 2;			/*並び順。数字の小さい順番に表示されます。*/
+		flex: 1;
+	}
+	
+	/*.sub-contents-parts*/
+	.sub-contents-parts {
+		width: 600px;	/*幅*/
+	}
+
+	/*1つ目のsub-contents*/
+	.sub-contents-parts:nth-child(2) {
+		order: 1;	/*並び順。数字の小さい順番に表示されます。*/
+	}
+	
+	}/*追加指定ここまで*/
+
+    /*listおよびlist2ボックス内のpタグ*/
+.list p,
+.list2 p {
+	margin: 0;
+	font-size: 0.7em;	/*文字サイズを70%に。*/
+}
+
+
+/*一覧ブロック（listタイプ）
+---------------------------------------------------------------------------*/
+/*listボックスを囲むボックス*/
+.list-container {
+	display: flex;					/*flexボックスを使う指定*/
+	flex-wrap: wrap;				/*折り返す指定*/
+	justify-content: space-between;	/*並びかたの種類の指定*/
+	flex-direction: column;			/*子要素を縦並びにする*/
+}
+
+/*listボックス。１個あたりのボックスの指定です。*/
+.list-container .list {
+	display: flex;					/*flexボックスを使う指定*/
+	flex-direction: column;			/*子要素を縦並びにする*/
+	justify-content: space-between;	/*並びかたの種類の指定*/
+	margin-bottom: 30px;			/*ボックス同士の上下間の余白*/
+	border: 1px solid #ccc;			/*枠線の幅、線種、色*/
+	padding: 20px;					/*ボックス内の余白*/
+	background: #fff;				/*背景色。*/
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅の順。0,0,0は黒の事で0.1は色が10%出た状態。*/
+}
+
+/*listボックス内のh4タグ*/
+.list h4 {
+	margin: 10px 0;			/*上下、左右へのh4の外側に空けるスペース*/
+	font-weight: normal;	/*hタグのデフォルトの太字を標準にする。太字がいいならこの１行を削除。*/
+}
+
+
+/*一覧ブロック（list2。横長タイプ。）
+---------------------------------------------------------------------------*/
+/*list2ボックス。１個あたりのボックスの指定です。*/
+.list2 {
+	display: flex;	/*flexボックスを使う指定*/
+	padding: 25px 0;	/*上下、左右へのボックス内の余白*/
+	border-top: 5px solid #ccc;		/*上の線の幅、線種、色*/
+}
+
+/*最後のlist2ブロック*/
+.list2:nth-last-of-type(1) {
+	border-bottom: 1px solid #ccc;	/*下の線の幅、線種、色*/
+	margin-bottom: 30px;			/*下に空けるスペース*/
+}
+
+/*ボックス内のfigure画像*/
+.list2 figure {
+	width: 20%;			/*画像の幅*/
+	margin-right: 170px;	/*画像の右側に空けるスペース*/
+}
+
+/*ボックス内のdiv*/
+.list2 div {
+	flex: 1;
+}
+
+/*ボックス内のh4タグ*/
+.list2 h4 {
+	margin: 0;				/*デフォルトマージンを一旦リセット*/
+	margin-bottom: 10px;	/*下に少し余白を作る*/
+}
+
+
+/*sub、sideで使う場合のlistおよびlist2の追加指定。
+---------------------------------------------------------------------------*/
+/*listおよびlist2共通設定。文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
+#sub .list, #sub .list2,
+#side .list, #side .list2 {
+	font-size: 0.75rem;
+}
+
+/*listへの追加設定。*/
+#sub .list,
+#side .list {
+	display: block;		/*figureをfloatで回り込みさせたかったので一旦block要素にしました*/
+
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+/*list内のh4タグへの追加指定*/
+#sub .list h4,
+#side .list h4 {
+	margin: 0 0 10px;
+	line-height: 1.5;
+}
+
+/*list内のfigure画像への追加指定*/
+#sub .list figure,
+#side .list figure {
+	width: 35%;			/*画像の幅*/
+	margin-right: 170px;	/*画像の右側に空けるスペース*/
+	float: left;		/*左に回り込み*/
+}
+
+/*list2への追加設定*/
+#sub .list2,
+#side .list2 {
+	padding: 10px 0;
+}
+
+/*list2内のh4タグへの追加指定*/
+#sub .list2 h4,
+#side .list2 h4 {
+	margin: 0;
+	line-height: 1.5;
+}
+
+/*list2内のfigure画像への追加指定*/
+#sub .list2 figure,
+#side .list2 figure {
+	width: 25%;			/*画像の幅*/
+	margin-right: 170px;	/*画像の右側に空けるスペース*/
+}
+
+
+/*list、list2内で使っているtableっぽく見える所。
+---------------------------------------------------------------------------*/
+/*ボックス全体*/
+dl.line {
+	margin: 0;
+	display: flex;		/*flexボックスを使う指定*/
+	flex-wrap: wrap;	/*折り返す指定*/
+	font-size: 0.9em;	/*文字サイズを70%に。*/
+	border-top: 1px solid #ccc;	/*上の線の幅、線種、色*/
+}
+
+/*左右のボックス*/
+dl.line dt, dl.line dd {
+	border-bottom: 1px solid #ccc;	/*下線の幅、線種、色*/
+	padding: 0 5px;					/*上下、左右へのボックス内の余白*/
+}
+
+/*左のボックス*/
+dl.line dt {
+	width: 8em;				/*幅。8文字(em)分。*/
+	background: #f0f0f0;	/*背景色*/
+}
+/*右のボックス*/
+dl.line dd {
+	width: calc(100% - 8em);	/*「8em」は上の「dl.line dt」のwidthの値です。*/
+}
+
+/*list2ブロック内でのline設定*/
+.list2 dl.line dt:nth-of-type(1), .list2 dl.line dd:nth-of-type(1),
+.list2 dl.line dt:nth-of-type(2), .list2 dl.line dd:nth-of-type(2) {
+	border-top: none;
+}
+
+.dli-user-circle-fill {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    position: relative;
+    width: 3em;
+    height: 3em;
+    border: 0.1em solid currentColor;
+    border-radius: 50%;
+    box-sizing: content-box;
+    overflow: hidden;
+  }
+  
+  .dli-user-circle-fill > span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .dli-user-circle-fill > span::before, .dli-user-circle-fill > span::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    background: currentColor;
+    box-sizing: border-box;
+  }
+  
+  .dli-user-circle-fill > span::before {
+    width: 2.425em;
+    height: 2.425em;
+    border-radius: 50%;
+    margin-bottom: 0.05em;
+  }
+  
+  .dli-user-circle-fill > span::after {
+    width: 0.85em;
+    height: 0.34em;
+    border-bottom: 0;
+    border-radius: 50% / 100% 100% 0 0;
+  }
+  body{
+    background-color: black;
+}
+.list-grid .list2 img {
+    background-color: transparent; /* 画像の背景を透明にする */
+}
+/* 020 */
+.button020 a {
+    background: #f27c7c;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button020 a:hover {
+    background: #ff0202;
+}
+.button020 a:before, .button020 a:after {
+  content: "";
+  position: absolute;
+  display: block;
+  transition: all 0.3s;
+  right: 0.6rem;
+  top: 50%;
+}
+.button020 a:before {
+  width: 1.4rem;
+  height: 2px;
+  background: #614f38;
+  transform: translateY(-50%);
+}
+.button020 a:after {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border-top: solid 2px currentColor;
+  border-right: solid 2px currentColor;
+  transform: translateY(-50%) rotate(45deg);
+}
+.button020 a:hover:before {
+  width: 1.5rem;
+}
+.button020 a:hover:after {
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+}
+.p{
+	color: #fff;
+}
+        /* 追加：ユーザーアイコンとユーザー名のフォントカラー */
+        .user-icon,
+        figcaption {
+            color: white;
+			height: -100px;
+        }
+
+        /* 追加：日付のスタイル */
+        .date {
+            position: absolute;
+            bottom: 5px;
+            right: 0;
+            font-size: 12px;
+            color: white;
+        }
+		.list2 figcaption {
+			white-space: nowrap; /* テキストが改行されないようにする */
+		}
+    .png{
+      position: relative;
+      left:55px;
+  }
+  .dli-chat {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    position: relative;
+    width: 1.06667em;
+    height: 0.8em;
+    background: #fff;
+    border: 0.1em solid currentColor;
+    border-radius: 0.2em;
+    box-sizing: content-box;
+  }
+  
+  .dli-chat::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 0.16em;
+    height: 0.16em;
+    background: inherit;
+    border: 0.1em solid currentColor;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-right-width: 0.14142em;
+    border-bottom-width: 0.14142em;
+    box-sizing: content-box;
+    border-radius: 0 0 0 0.1em;
+    transform: skewY(-45deg);
+    transform-origin: left top;
+  }

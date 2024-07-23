@@ -1,0 +1,146 @@
+.border {
+    border: double 3px;
+    border-color: #e3dddd;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 80px;
+    position: relative;
+    right: 350px;
+    top:45px;
+}
+
+.border2 {
+    border: double 3px;
+    border-color: rgb(227, 221, 221);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height:80px;
+    position: relative;
+    left: 52px;
+    bottom: 70px;
+}
+
+.border3 {
+    border: double 3px;
+    border-color: rgb(227, 221, 221);
+    color: white;
+    margin-left: auto;
+    margin-left: auto;
+    width: 200px;
+    height: 80px;
+    position: relative;
+    right: 996px;
+    bottom: 70px;
+}
+
+.border4 {
+    border: double 3px;
+    border-color: rgb(227, 221, 221);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 80px;
+    position: relative;
+    left: 52px;
+    bottom: 155px;
+}
+
+.border5 {
+    border: double 3px;
+    border-color: rgb(227, 221, 221);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 80px;
+    position: relative;
+    right: 350px;
+    bottom:155px;
+}
+
+.border6 {
+    border: double 3px;
+    border-color:rgb(227, 221, 221);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 80px;
+    position: relative;
+    left: 52px;
+    bottom: 240px;
+}
+
+.botton1{
+    
+    position: relative;
+    left: 330px;
+    bottom: 230px;
+}
+
+.botton2{
+    position: relative;
+    bottom: 255px;
+    left:970px;
+}
+
+.text{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    text-align: left;
+    left: 295px;
+    bottom: 10px;
+}
+.text2{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 25px;
+}
+
+.text3{
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+}
+
+.text4{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 25px;
+}
+
+.text5{
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+}
+
+.text6{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 25px;
+}
+
+.h1{
+    font-size: 30px;
+    color: #dbce61f8;
+    font-family: "Monotype Corsiva";
+    position: relative;
+    text-align: center;
+    right: 30px;
+    bottom: 30px;
+}
+
+body{
+    background-image: url(sunahama.jpg);
+    background-size: cover;
+}

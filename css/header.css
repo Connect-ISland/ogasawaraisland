@@ -1,0 +1,288 @@
+.color{
+  background-color: rgb(0, 0, 0);
+  }
+   
+  .rogo{
+    width: 125px;
+    height: 125px;
+  }
+  /*家マークCSS*/
+.homu-iti{
+    position: absolute; /* 今の位置を基準 */
+      top: 20px; /* 上から10px */
+      left: 20%; /* 左から20px */
+  }
+  
+
+    .dli-home {
+      display: inline-block;
+      vertical-align: middle;
+      color: #ffffff;
+      line-height: 1;
+      position: relative;
+      width:2em;
+      height: 1.5em;
+      border: 0.1em solid currentColor;
+      border-top: 0;
+      box-sizing: border-box;
+    }
+    
+    .dli-home::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1.4142em;
+      height: 1.4142em;
+      border: 0.1em solid currentColor;
+      border-right: 0;
+      border-bottom: 0;
+      box-sizing: border-box;
+      transform: translate(-50%, -46%) rotate(45deg) skew(-10deg, -10deg);
+    }
+    
+    .dli-home::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -0.1em;
+      width: 45%;
+      height: 75%;
+      background: #fff;
+      border: 0.1em solid currentColor;
+      border-bottom: 0;
+      box-sizing: border-box;
+      transform: translateX(-50%);
+    }
+  
+    .button-home{
+      background: #4e4b4b;
+      border-radius: 100px;
+      display: block;
+      width: 200px;
+      padding: 30px;
+      box-sizing: border-box;
+      background: #565656;
+      color: #FFF;
+      text-decoration: none;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    /*search.phpからhomu.phpに移動したときのレイアウト
+    .button-home:active {
+      border: 3px solid #ffffff;
+      border-radius: 100px;
+    }*/
+    
+    /*検索マークCSS*/
+    .search-iti{
+      position: absolute; /* 今の位置を基準 */
+      top: 20px; /* 上から10px */
+      left: 40%; /* 左から20px */
+    }
+
+  .dli-search {
+      display: inline-block;
+      vertical-align: middle;
+      color: #ffffff;
+      line-height: 1;
+      width: 1.4em;
+      height: 1.4em;
+      border: 0.1em solid currentColor;
+      border-radius: 50%;
+      box-sizing: content-box;
+      position: relative;
+    }
+    
+    .dli-search::before {
+      content: '';
+      position: absolute;
+      top: calc(85.35534% + 0.07071em);
+      left: calc(85.35534% + 0.07071em);
+      width: 0.672em;
+      height: 0.2em;
+      background: currentColor;
+      border-radius: 0 0.1em 0.1em 0;
+      transform: translateY(-50%) rotate(45deg);
+      transform-origin: left center;
+    }
+  
+    .button-search{
+      background: #4e4b4b;
+       background: #4e4b4b;
+      border-radius: 100px;
+      display: block;
+      width: 200px;
+      padding: 30px;
+      box-sizing: border-box;
+      background: #565656;
+      color: #FFF;
+      text-decoration: none;
+      text-align: center;
+      margin: 10px 0;
+    }
+    .button-search:active {
+      border: 3px solid #ffffff;
+      border-radius: 100px;
+    }
+  
+  
+  /*新規投稿*/
+  .sinkitoukou-iti{
+    position: absolute; /* 今の位置を基準 */
+    top: 20px; /* 上から10px */
+    left: 60%; /* 左から20px */
+  }
+
+  .dli-box-out {
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    line-height: 1;
+    position: relative;
+    width: 2.3em;
+    height: 2.3em;
+  }
+  
+  .dli-box-out::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.1em;
+    border: 0.2em solid currentColor;
+    border-top: 0;
+    border-radius: 0 0 0.15em 0.15em;
+    box-sizing: border-box;
+  }
+  
+  .dli-box-out > span {
+    position: relative;
+    width: 0.2em;
+    height: 1.25em;
+    background: currentColor;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.353em;
+    margin: auto;
+  }
+  
+  .dli-box-out > span::before {
+    content: '';
+    width: 0.8125em;
+    height: 0.8125em;
+    border: 0.2em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(-45deg);
+    transform-origin: top right;
+    position: absolute;
+    top: -0.05em;
+    right: 50%;
+    box-sizing: border-box;
+  }
+  .button-sinkitoukou{
+    background: #4e4b4b;
+     background: #4e4b4b;
+      border-radius: 100px;
+      display: block;
+      width: 200px;
+      padding: 30px;
+      box-sizing: border-box;
+      background: #565656;
+      color: #FFF;
+      text-decoration: none;
+      text-align: center;
+      margin: 10px 0;
+  }
+  .button-sinkitoukou:active {
+    border: 3px solid #ffffff;
+    border-radius: 100px;
+  }
+  
+  
+  
+  /*アイコンマークCSS*/
+  .my-iti{
+    position: absolute; /* 今の位置を基準 */
+    top: 20px; /* 上から10px */
+    left:80%; /* 左から20px */
+  }
+
+    .dli-user-circle-fill {
+      display: inline-block;
+      vertical-align: middle;
+      color: #ffffff;
+      line-height: 1;
+      position: relative;
+      width: 2em;
+      height: 2em;
+      border: 0.2em solid currentColor;
+      border-radius: 50%;
+      box-sizing: content-box;
+      overflow: hidden;
+    }
+    
+    .dli-user-circle-fill > span {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    
+    .dli-user-circle-fill > span::before, .dli-user-circle-fill > span::after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      background: currentColor;
+      box-sizing: border-box;
+    }
+    
+    .dli-user-circle-fill > span::before {
+      width: 0.85em;
+      height: 0.85em;
+      border-radius: 50%;
+      margin-bottom: 0.1em;
+    }
+    
+    .dli-user-circle-fill > span::after {
+      width: 1.7em;
+      height: 0.68em;
+      border-bottom: 0;
+      border-radius: 50% / 100% 100% 0 0;
+    }
+  
+    .button-my{
+      background: #4e4b4b;
+       background: #4e4b4b;
+      border-radius: 100px;
+      display: block;
+      width: 200px;
+      padding: 30px;
+      box-sizing: border-box;
+      background: #565656;
+      color: #FFF;
+      text-decoration: none;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    /* アクティブなボタンのスタイル */
+.button-home.active,
+.button-search.active,
+.button-sinkitoukou.active,
+.button-my.active {
+background-color: #f00; /* アクティブなボタンの背景色 */
+}
+
+/* ボタンがアクティブのときのスタイル */
+.button-home:active,
+.button-search:active,
+.button-sinkitoukou:active,
+.button-my:active {
+border: 3px solid #ffffff; /* ボタンの枠線 */
+}

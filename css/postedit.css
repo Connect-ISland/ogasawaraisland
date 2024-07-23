@@ -1,0 +1,57 @@
+/* postedit.css */
+
+/* ページ全体のスタイル */
+body {
+    font-family: Arial, sans-serif; /* フォント指定 */
+    background-color: #f0f0f0; /* 背景色 */
+    color: #333; /* テキスト色 */
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダーのスタイル */
+.color {
+    background-color: #333; /* ヘッダーの背景色 */
+    color: #fff; /* ヘッダーのテキスト色 */
+    padding: 10px;
+    text-align: center;
+}
+
+.color img {
+    width: 100px; /* ロゴのサイズ */
+    height: auto;
+}
+
+/* コンテンツのスタイル */
+.post {
+    max-width: 800px; /* コンテンツの最大幅 */
+    margin: 20px auto; /* 上下左右の中央寄せ */
+    background-color: #fff; /* コンテンツの背景色 */
+    padding: 20px;
+    border-radius: 8px; /* 角丸 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* ドロップシャドウ */
+}
+
+.post h3 {
+    font-size: 18px; /* 見出しのサイズ */
+    margin-bottom: 10px; /* 下の余白 */
+}
+
+.post p {
+    line-height: 1.6; /* 段落の行間 */
+    margin-bottom: 15px; /* 下の余白 */
+}
+
+.delete {
+    background-color: #d9534f; /* 削除ボタンの背景色 */
+    color: #fff; /* 削除ボタンのテキスト色 */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete:hover {
+    background-color: #c9302c; /* ホバー時の背景色 */
+}

@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+background-image: url(sunahama.jpg);
+background-size: cover;
+
+}
+#login-box{
+  position: relative;
+  margin: 5% auto;
+  width: 600px;
+  height: 400px;
+  box-shadow: 0 2px 4px #736d6d;
+}
+
+.left-box{
+  background-color: rgba(194, 138, 226, 0.759);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 230px;
+  width: 300;
+  height: 300;
+}
+
+h1{
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 28;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 525px;
+  height: 50px;
+  border: none;
+  outline:none;
+  border-bottom: 1px solid #aaa;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+input[type="submit"]{
+  margin-bottom: 28px;
+  width: 100%px;
+  height: 30px;
+  background-color: rgb(185, 151, 108);
+  border-radius: 2px;
+  border: none;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+input[type="submit"]:hover{
+  background-color: rgb(181, 154, 80);
+}
+input[type="submit"]:active {
+  transform: translate(4px);
+}
+
+.right-box{
+  background-color: rgb(18, 49, 49);
+  position: absolute;
+  top:0;
+  right: 0;
+  padding: 400px;
+  height: 400px;
+  width: 300px;
+}
+
+/* 画像を包む親要素のクラス名に応じて調整してください */
+.image-container {
+  width: 100%; /* 画像を包む親要素の幅に合わせる場合 */
+  height: auto; /* 高さを自動で調整 */
+  max-width: 100%; /* 幅が親要素の幅を超えないようにする */
+  max-height: 100%; /* 高さが親要素の高さを超えないようにする */
+  overflow: hidden; /* 画像のはみ出しを隠す */
+}
+
+/* 画像要素自体のスタイル */
+.image-container img {
+  display: block; /* 画像をブロック要素として表示 */
+  width: 100%; /* 画像の幅を親要素に合わせる */
+  height: auto; /* 高さを自動で調整 */
+}
+
+
+h1 {
+  font-family: "Monotype Corsiva";
+  color: #dbce61f8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 20px; /* オプション: ヘッダーからの余白を追加する場合 */
+  font-size: 100px ; /* !importantを使用して他のスタイルを上書き */
+  padding: 30px;
+}
+
+h2{
+  font-family: "Impact";
+  font-size: 35px;
+  color: #fffffff8;
+}

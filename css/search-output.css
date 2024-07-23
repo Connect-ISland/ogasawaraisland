@@ -1,0 +1,15 @@
+.button-search {
+    border: 3px solid #ffffff;
+    border-radius: 100px;
+}
+
+body{ 
+    color:#ffffff;
+    background:#000000;
+   
+}
+.kensaku{
+    position: absolute; /* 今の位置を基準 */
+    top: 200px; 
+    left: 25%; 
+}

@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('sunahama.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60%; /* 横長にするために幅を60%に設定 */
+    max-width: 800px; /* 最大幅を800pxに設定 */
+}
+
+.error-message, .success-message {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #a5dce7de;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+.text {
+    font-size: 10px;
+}
+
+.center-text {
+    font-size: 25px; /* 文字サイズを25pxに設定 */
+    text-align: center; /* テキストを中央に配置 */
+    margin: 0 auto; /* 要素を中央に配置 */
+}

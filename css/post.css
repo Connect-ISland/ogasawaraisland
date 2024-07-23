@@ -1,0 +1,168 @@
+.all{
+    text-align:center;
+
+}
+.border-dotted {
+    margin : 3em 0 1.5em ;
+    padding : 1em 1.5em ;
+    line-height : 1.8 ;
+    border : dotted 3px #777474 ;
+
+}
+.title{
+    font-family:cursive;
+}
+.center{
+   margin: 0 auto;
+  }
+.delete {
+    color:black;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    /* margin: 0 auto; */
+    padding: .7em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1em;
+    left: 200px;
+}
+u {
+    font-size: 24px; /* 任意のサイズに変更してください */
+}
+.post{
+    position: relative;
+    top: -23px;
+    left:370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 25px;
+    margin: 0 auto;
+    padding: .8em 1em;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1em;
+}
+.tinko{
+    /* text-align: center; */
+    font-size: 18px;
+}
+.text{
+    position: relative;
+    top: 25px;
+    left:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 290px;
+    margin: 0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1em;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.png{
+    position: relative;
+    left:55px;
+    top: 60px;
+}
+.line{
+    /* position: relative;
+    top: 60px; */
+    margin-right: auto;
+    border-bottom:2px solid;
+    border-color: #999999;
+    height: 40px;
+    /* width: 300px; */
+}
+.border-dashed {
+    margin : 3em 0 1.5em ;
+    padding : 1em 1.5em ;
+    line-height : 1.8 ;
+    border : double 4px #fbfbfb;
+
+}
+
+	/*フッターメニュー設定
+---------------------------------------------------------------------------*/
+/*ボックス全体の設定*/
+#footermenu2-parts {
+	background: #333;	/*背景色*/
+	color: #66b0ff;		/*文字色*/
+	font-size: 1.3rem;	/*文字サイズ。bodyのfont-sizeの80%です。*/
+	padding: 20px 50px;	/*上下、左右へのボックス内の余白*/
+	display: flex;		/*flexボックスを使う指定*/
+	justify-content: space-between;	/*並びかたの種類の指定*/
+	align-items: flex-start;		/*垂直揃えの指定。上に配置されるように。*/
+}
+
+/*ボックス内のリンクテキスト設定*/
+#footermenu2-parts a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*ulタグ（メニューの１列あたり）*/
+#footermenu2-parts ul {
+	margin: 0;list-style: none;
+	padding: 0 2px;
+	flex: 1;
+}
+
+/*メニューの見出し(title)*/
+#footermenu2-parts .title {
+	font-weight: bold;		/*太字にする*/
+	color: #ccc;			/*文字色*/
+	padding-bottom: 5px;	/*下に空けるスペース*/
+}
+	
+	/*mainブロック設定
+---------------------------------------------------------------------------*/
+/*mainブロックの設定*/
+main {
+	margin: 2rem 0;	/*ブロックの外側（上下、左右）に空けるスペース*/
+}
+
+/*main-contents-partsの設定*/
+.main-contents-parts {
+	margin-bottom: 30px;		/*ボックスの下に空けるスペース。sub-contents-partsとの間の余白です。*/
+}
+
+	/*画面幅900px以上の追加指定*/
+	@media screen and (min-width:900px) {
+
+	/*カラムで使う為の指定*/
+	main.column-parts {
+		display: flex;	/*flexボックスを使う指定*/
+		justify-content: space-between;	/*並びかたの種類の指定*/
+		gap: 2rem;						/*main-contents-partsとsub-contents-partsの間のマージン的な隙間*/
+	}
+	
+	/*main-contents-partsの設定*/
+	.main-contents-parts {
+		margin-bottom: 0;
+		order: 2;			/*並び順。数字の小さい順番に表示されます。*/
+		flex: 1;
+	}
+	
+	/*.sub-contents-parts*/
+	.sub-contents-parts {
+		width: 650px;	/*幅*/
+	}
+
+	/*1つ目のsub-contents*/
+	.sub-contents-parts:nth-child(2) {
+		order: 1;	/*並び順。数字の小さい順番に表示されます。*/
+	}
+	
+	}/*追加指定ここまで*/
+	
